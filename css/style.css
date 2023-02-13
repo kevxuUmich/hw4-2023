@@ -10,6 +10,7 @@ body{
   padding: 0;
 }
 
+
 .overview{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
@@ -18,6 +19,7 @@ body{
   color: white;
   height: 400px;                /* Parallax effect */
 }
+
 
 .overview p{
   color: white;
@@ -39,7 +41,7 @@ h2{
 }
 
 nav li{
-  display: inline;
+  display:inline;
   padding-right:20px;
 
 }
@@ -68,7 +70,7 @@ nav{
 }
 
 footer{
-  background-color: #000;
+  background-color: black;
   color: white;
   padding-top: 30px;
   text-align: center;
@@ -113,14 +115,12 @@ nav:hover, nav:focus{
 .skip a{
   position: relative;
   top: -40px;
-  
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{
   top: 20px;
   visibility: visible;
-
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -138,10 +138,10 @@ nav:hover, nav:focus{
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
 .container > :first-child{
+  display: grid;
   grid-column: 1 / -1;
   height: 400px;
   background-image: url("../images/header.jpg");
-  background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   text-align: center;
 }
